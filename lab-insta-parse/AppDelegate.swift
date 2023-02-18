@@ -5,6 +5,7 @@
 //  Created by Charlie Hieger on 10/29/22.
 //
 
+import ParseSwift
 import UIKit
 
 // TODO: Pt 1 - Import Parse Swift
@@ -15,13 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        // TODO: Pt 1 - Initialize Parse SDK
-        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
-
-
-        // TODO: Pt 1: - Instantiate and save a test parse object to your server
-        // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
-
+        ParseSwift.initialize(applicationId: "atrMa07Jq4Z26IZYr6rP8o7gzdETZ82uZ5I2BQue",
+                              clientKey: "YtL2nuTjnBgEyX3n47SMAgMvBBl7snvK5TN2ZH2H",
+                              serverURL: URL(string: "https://parseapi.back4app.com")!)
 
         return true
     }
